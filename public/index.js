@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('#example').DataTable( {
 			ajax: {
-				url: 'http://localhost:3001/api/v1/todos',
+				url: '/api/v1/todos',
 				dataSrc: ''
 			},
 			columns: [ 
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 	$('#add-item').on('click', () => {
 		$.ajax({
-			url:'http://localhost:3001/api/v1/todos',
+			url:'/api/v1/todos',
 			type:'POST',
 			data: {
 				todo: {
@@ -51,7 +51,7 @@ $(document).ready(function(){
 		$('#edit-input-price').val(editContent);
 		$('#edit-item').on('click', (event) => {
 			$.ajax({
-				url : `http://localhost:3001/api/v1/todos/${id}`,
+				url : `/api/v1/todos/${id}`,
 				type : 'PATCH',
 				data: {
 					todo: {
@@ -81,7 +81,7 @@ $(document).ready(function(){
 		var tr = $(this).closest('tr');
 		var id = tr.children('td:eq(0)').text(); //get the text from first col of current row
 		$.ajax({
-			url : `http://localhost:3001/api/v1/todos/${id}`,
+			url : `/api/v1/todos/${id}`,
 			type : 'DELETE',
 			data : {
 				authenticity_token : $('meta[name=csrf-token]').attr('content')
