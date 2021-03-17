@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My To-do List</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" >
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+        <script src="https://editor.datatables.net/extensions/Editor/js/dataTables.editor.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"></script>        
+    </head>
+    <body>
+      <div class="container">
+        <h1 style="text-align:center;">To-do list</h1> 
+        <form accept-charset="UTF-8" action="http://localhost:3001/todos" method="POST" id="todo_form">
+          
+        <!-- Button trigger modal -->
+        <button type="button" class="addBtn btn btn-primary" data-toggle="modal" data-target="#addItemModal">
+          Add
+        </button>    
+    
+        </form>
+        <div class="container"  style="float:center;" id="todo-container">
+          <table id="example" class="display cell-border" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Content</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+          </table>
+        </div>
+          
+            <!-- Add Item Modal -->
+            <div class="modal fade" id="addItemModal" tabindex="-1" role="dialog" aria-labelledby="addItemModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center" id="addItemModalLabel">New Item</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body" id="addnewitemModal">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Title:</span>
+                      </div>
+                      <input type="text" aria-label="Item Name" class="form-control" id="input-name">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-append">
+                        <span class="input-group-text">Content:</span>
+                      </div>
+                      <input type="integer" class="form-control" aria-label="JPY" id="input-price">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="add-item">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Edit Item Modal -->
+            <div class="modal fade" id="editItemModal" tabindex="-1" role="dialog" aria-labelledby="editItemModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title text-center" id="editItemModalLabel">Edit Item</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Title:</span>
+                      </div>
+                      <input type="text" aria-label="Item Name" class="form-control" id="edit-input-name">
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-append">
+                        <span class="input-group-text">Content:</span>
+                      </div>
+                      <input type="integer" class="form-control" aria-label="JPY" id="edit-input-price">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="edit-item" target-id="">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+<script type="text/javascript" src="index.js"></script>
+</html>

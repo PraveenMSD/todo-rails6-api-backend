@@ -1,0 +1,25 @@
+#todo-container {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+.addBtn {
+    position: absolute;
+    left: 1155px;
+    top: 25px;
+}
+
+/* #input-name {
+    position: absolute;
+    width: 500px;
+    left: 50px;
+    top: -5px;
+}
+
+#input-price {
+    position: absolute;
+    width: 500px;
+    left: 50px;
+    top: 15px;
+} */
