@@ -17,7 +17,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
         <script src="https://editor.datatables.net/extensions/Editor/js/dataTables.editor.min.js"></script>
-        <script src="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"></script>        
+        <script src="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css"></script>
     </head>
     <body>
       <div class="container">
@@ -31,7 +31,7 @@
     
         </form>
         <div class="container"  style="float:center;" id="todo-container">
-          <table id="example" class="display cell-border" style="width:100%">
+          <table id="example" class="display cell-border table table-striped table-bordered" style="width:100%">
             <thead>
                 <tr>
                     <th>Id</th>
@@ -58,13 +58,13 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text">Title:</span>
                       </div>
-                      <input type="text" aria-label="Item Name" class="form-control" id="input-name">
+                      <input type="text" aria-label="Item Name" class="form-control" id="input-name" required>
                     </div>
                     <div class="input-group mb-3">
                       <div class="input-group-append">
                         <span class="input-group-text">Content:</span>
                       </div>
-                      <input type="integer" class="form-control" aria-label="JPY" id="input-price">
+                      <input type="integer" class="form-control" aria-label="JPY" id="input-price" required>
                     </div>
                   </div>
                   <div class="modal-footer">
