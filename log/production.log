@@ -1,0 +1,91 @@
+I, [2021-03-17T19:04:35.291069 #45333]  INFO -- : [273728e6-e9aa-4c8e-9279-f90c94d8e0bc] Started GET "/" for 127.0.0.1 at 2021-03-17 19:04:35 +0530
+F, [2021-03-17T19:04:35.292981 #45333] FATAL -- : [273728e6-e9aa-4c8e-9279-f90c94d8e0bc]   
+[273728e6-e9aa-4c8e-9279-f90c94d8e0bc] ActionController::RoutingError (No route matches [GET] "/"):
+[273728e6-e9aa-4c8e-9279-f90c94d8e0bc]   
+I, [2021-03-17T19:04:37.582681 #45333]  INFO -- : [97d9ab25-bfbe-45d7-ba2b-ba63a7386c94] Started GET "/" for 127.0.0.1 at 2021-03-17 19:04:37 +0530
+F, [2021-03-17T19:04:37.583830 #45333] FATAL -- : [97d9ab25-bfbe-45d7-ba2b-ba63a7386c94]   
+[97d9ab25-bfbe-45d7-ba2b-ba63a7386c94] ActionController::RoutingError (No route matches [GET] "/"):
+[97d9ab25-bfbe-45d7-ba2b-ba63a7386c94]   
+I, [2021-03-17T19:04:46.446139 #45333]  INFO -- : [5d1fd59e-f1d7-4b4f-b473-01d359c20f1d] Started GET "/api/v1/todos?_=1615988086287" for 127.0.0.1 at 2021-03-17 19:04:46 +0530
+I, [2021-03-17T19:04:46.449224 #45333]  INFO -- : [5d1fd59e-f1d7-4b4f-b473-01d359c20f1d] Processing by Api::V1::TodosController#index as JSON
+I, [2021-03-17T19:04:46.449456 #45333]  INFO -- : [5d1fd59e-f1d7-4b4f-b473-01d359c20f1d]   Parameters: {"_"=>"1615988086287"}
+I, [2021-03-17T19:04:46.461203 #45333]  INFO -- : [5d1fd59e-f1d7-4b4f-b473-01d359c20f1d] Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.7ms | Allocations: 1744)
+F, [2021-03-17T19:04:46.464109 #45333] FATAL -- : [5d1fd59e-f1d7-4b4f-b473-01d359c20f1d]   
+[5d1fd59e-f1d7-4b4f-b473-01d359c20f1d] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: todos):
+[5d1fd59e-f1d7-4b4f-b473-01d359c20f1d]   
+[5d1fd59e-f1d7-4b4f-b473-01d359c20f1d] app/controllers/api/v1/todos_controller.rb:8:in `index'
+I, [2021-03-17T19:05:05.979076 #45333]  INFO -- : [a5e82d81-e277-477c-9f27-e76a13e3fc00] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:05 +0530
+F, [2021-03-17T19:05:05.980231 #45333] FATAL -- : [a5e82d81-e277-477c-9f27-e76a13e3fc00]   
+[a5e82d81-e277-477c-9f27-e76a13e3fc00] ActionController::RoutingError (No route matches [GET] "/"):
+[a5e82d81-e277-477c-9f27-e76a13e3fc00]   
+I, [2021-03-17T19:05:08.021964 #45333]  INFO -- : [1a0340ba-919b-4e69-890b-0382a36cf404] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:08 +0530
+F, [2021-03-17T19:05:08.022909 #45333] FATAL -- : [1a0340ba-919b-4e69-890b-0382a36cf404]   
+[1a0340ba-919b-4e69-890b-0382a36cf404] ActionController::RoutingError (No route matches [GET] "/"):
+[1a0340ba-919b-4e69-890b-0382a36cf404]   
+I, [2021-03-17T19:05:08.688999 #45333]  INFO -- : [b7bb9806-5107-482e-bd61-ab5e1048e8ff] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:08 +0530
+F, [2021-03-17T19:05:08.690117 #45333] FATAL -- : [b7bb9806-5107-482e-bd61-ab5e1048e8ff]   
+[b7bb9806-5107-482e-bd61-ab5e1048e8ff] ActionController::RoutingError (No route matches [GET] "/"):
+[b7bb9806-5107-482e-bd61-ab5e1048e8ff]   
+I, [2021-03-17T19:05:09.114920 #45333]  INFO -- : [f016623c-7d0b-4fec-b1d6-fb0f410cb5e7] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:09 +0530
+F, [2021-03-17T19:05:09.115788 #45333] FATAL -- : [f016623c-7d0b-4fec-b1d6-fb0f410cb5e7]   
+[f016623c-7d0b-4fec-b1d6-fb0f410cb5e7] ActionController::RoutingError (No route matches [GET] "/"):
+[f016623c-7d0b-4fec-b1d6-fb0f410cb5e7]   
+I, [2021-03-17T19:05:09.348009 #45333]  INFO -- : [a4adb983-832c-42ad-aa5c-78e17b5b9b72] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:09 +0530
+F, [2021-03-17T19:05:09.349166 #45333] FATAL -- : [a4adb983-832c-42ad-aa5c-78e17b5b9b72]   
+[a4adb983-832c-42ad-aa5c-78e17b5b9b72] ActionController::RoutingError (No route matches [GET] "/"):
+[a4adb983-832c-42ad-aa5c-78e17b5b9b72]   
+I, [2021-03-17T19:05:09.577508 #45333]  INFO -- : [33dc3647-e4e9-4009-b566-c54a6ac05fb0] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:09 +0530
+F, [2021-03-17T19:05:09.578550 #45333] FATAL -- : [33dc3647-e4e9-4009-b566-c54a6ac05fb0]   
+[33dc3647-e4e9-4009-b566-c54a6ac05fb0] ActionController::RoutingError (No route matches [GET] "/"):
+[33dc3647-e4e9-4009-b566-c54a6ac05fb0]   
+I, [2021-03-17T19:05:09.793139 #45333]  INFO -- : [5b01aaf2-0c9f-4f9c-8288-c26a73fd8c3e] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:09 +0530
+F, [2021-03-17T19:05:09.794134 #45333] FATAL -- : [5b01aaf2-0c9f-4f9c-8288-c26a73fd8c3e]   
+[5b01aaf2-0c9f-4f9c-8288-c26a73fd8c3e] ActionController::RoutingError (No route matches [GET] "/"):
+[5b01aaf2-0c9f-4f9c-8288-c26a73fd8c3e]   
+I, [2021-03-17T19:05:20.916829 #45561]  INFO -- : [0acd039d-7335-4f62-8f7f-08d3995909d9] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:20 +0530
+F, [2021-03-17T19:05:20.918167 #45561] FATAL -- : [0acd039d-7335-4f62-8f7f-08d3995909d9]   
+[0acd039d-7335-4f62-8f7f-08d3995909d9] ActionController::RoutingError (No route matches [GET] "/"):
+[0acd039d-7335-4f62-8f7f-08d3995909d9]   
+I, [2021-03-17T19:05:22.889084 #45561]  INFO -- : [620666f9-ab5c-448d-938a-c820bc415a4b] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:22 +0530
+F, [2021-03-17T19:05:22.890034 #45561] FATAL -- : [620666f9-ab5c-448d-938a-c820bc415a4b]   
+[620666f9-ab5c-448d-938a-c820bc415a4b] ActionController::RoutingError (No route matches [GET] "/"):
+[620666f9-ab5c-448d-938a-c820bc415a4b]   
+I, [2021-03-17T19:05:24.313639 #45561]  INFO -- : [aa18d71e-b8aa-4a3c-a43c-2bbf04859b5e] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:24 +0530
+F, [2021-03-17T19:05:24.314591 #45561] FATAL -- : [aa18d71e-b8aa-4a3c-a43c-2bbf04859b5e]   
+[aa18d71e-b8aa-4a3c-a43c-2bbf04859b5e] ActionController::RoutingError (No route matches [GET] "/"):
+[aa18d71e-b8aa-4a3c-a43c-2bbf04859b5e]   
+I, [2021-03-17T19:05:38.673456 #45561]  INFO -- : [c8f8905b-f821-455f-9819-adacaf77d83d] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:38 +0530
+F, [2021-03-17T19:05:38.674357 #45561] FATAL -- : [c8f8905b-f821-455f-9819-adacaf77d83d]   
+[c8f8905b-f821-455f-9819-adacaf77d83d] ActionController::RoutingError (No route matches [GET] "/"):
+[c8f8905b-f821-455f-9819-adacaf77d83d]   
+I, [2021-03-17T19:05:41.267307 #45561]  INFO -- : [49741b1b-1b83-4d8a-9796-4568e4c4ef22] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:41 +0530
+F, [2021-03-17T19:05:41.268464 #45561] FATAL -- : [49741b1b-1b83-4d8a-9796-4568e4c4ef22]   
+[49741b1b-1b83-4d8a-9796-4568e4c4ef22] ActionController::RoutingError (No route matches [GET] "/"):
+[49741b1b-1b83-4d8a-9796-4568e4c4ef22]   
+I, [2021-03-17T19:05:42.130593 #45561]  INFO -- : [a694c2df-9361-4723-b3d4-98f3b80d088f] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:42 +0530
+F, [2021-03-17T19:05:42.131819 #45561] FATAL -- : [a694c2df-9361-4723-b3d4-98f3b80d088f]   
+[a694c2df-9361-4723-b3d4-98f3b80d088f] ActionController::RoutingError (No route matches [GET] "/"):
+[a694c2df-9361-4723-b3d4-98f3b80d088f]   
+I, [2021-03-17T19:05:42.790057 #45561]  INFO -- : [07d7d261-95ba-4603-b3ea-c932cc9b2539] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:42 +0530
+F, [2021-03-17T19:05:42.791044 #45561] FATAL -- : [07d7d261-95ba-4603-b3ea-c932cc9b2539]   
+[07d7d261-95ba-4603-b3ea-c932cc9b2539] ActionController::RoutingError (No route matches [GET] "/"):
+[07d7d261-95ba-4603-b3ea-c932cc9b2539]   
+I, [2021-03-17T19:05:43.282734 #45561]  INFO -- : [afea1650-ea84-45f9-b9b8-2ca828698999] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:43 +0530
+F, [2021-03-17T19:05:43.284012 #45561] FATAL -- : [afea1650-ea84-45f9-b9b8-2ca828698999]   
+[afea1650-ea84-45f9-b9b8-2ca828698999] ActionController::RoutingError (No route matches [GET] "/"):
+[afea1650-ea84-45f9-b9b8-2ca828698999]   
+I, [2021-03-17T19:05:51.606391 #45561]  INFO -- : [3fa8d573-bd19-4998-82a5-fe8774441a03] Started GET "/api/v1/todos" for 127.0.0.1 at 2021-03-17 19:05:51 +0530
+I, [2021-03-17T19:05:51.623018 #45561]  INFO -- : [3fa8d573-bd19-4998-82a5-fe8774441a03] Processing by Api::V1::TodosController#index as JSON
+I, [2021-03-17T19:05:51.633007 #45561]  INFO -- : [3fa8d573-bd19-4998-82a5-fe8774441a03] Completed 500 Internal Server Error in 10ms (ActiveRecord: 2.3ms | Allocations: 1744)
+F, [2021-03-17T19:05:51.635500 #45561] FATAL -- : [3fa8d573-bd19-4998-82a5-fe8774441a03]   
+[3fa8d573-bd19-4998-82a5-fe8774441a03] ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: todos):
+[3fa8d573-bd19-4998-82a5-fe8774441a03]   
+[3fa8d573-bd19-4998-82a5-fe8774441a03] app/controllers/api/v1/todos_controller.rb:8:in `index'
+I, [2021-03-17T19:05:56.502539 #45561]  INFO -- : [322b9eb3-d615-469c-bdaf-15af0510df8a] Started GET "/" for 127.0.0.1 at 2021-03-17 19:05:56 +0530
+F, [2021-03-17T19:05:56.503704 #45561] FATAL -- : [322b9eb3-d615-469c-bdaf-15af0510df8a]   
+[322b9eb3-d615-469c-bdaf-15af0510df8a] ActionController::RoutingError (No route matches [GET] "/"):
+[322b9eb3-d615-469c-bdaf-15af0510df8a]   
+I, [2021-03-17T19:06:24.422757 #45561]  INFO -- : [e2fb7843-07b7-4ef7-9544-ae859a7e2af5] Started GET "/index.html" for 127.0.0.1 at 2021-03-17 19:06:24 +0530
+F, [2021-03-17T19:06:24.423918 #45561] FATAL -- : [e2fb7843-07b7-4ef7-9544-ae859a7e2af5]   
+[e2fb7843-07b7-4ef7-9544-ae859a7e2af5] ActionController::RoutingError (No route matches [GET] "/index.html"):
+[e2fb7843-07b7-4ef7-9544-ae859a7e2af5]   
