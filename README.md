@@ -1,24 +1,32 @@
-# README
+# To-Do Rails Jquery
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple todo app.
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+An simple todo app built with rails api as backend and Jquery Ajax as front end.
 
-* System dependencies
+## Live Link
 
-* Configuration
+* [To-Do](https://praveen-todo.herokuapp.com/)
 
-* Database creation
+## Getting Started
 
-* Database initialization
+### Dependencies
 
-* How to run the test suite
+* Bootstrap
+* Jquery table
 
-* Services (job queues, cache servers, search engines, etc.)
+### Executing program
 
-* Deployment instructions
+* How to run the program
+* Clone the repo
+```
+bundle install
+```
 
-* ...
+## Authors
+
+Contributors names and contact info
+  
+* [@Praveen](https://twitter.com/praveenr_96?s=09)
